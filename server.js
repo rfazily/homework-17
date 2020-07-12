@@ -11,7 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(MONGOLAB_URI="mongodb://example:example@ds053312.mongolab.com:53312/todolist"
+, { useNewUrlParser: true });
 
 const db = require("./models");
 
