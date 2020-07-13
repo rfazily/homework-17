@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node seeders/seed.js && node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "heroku-postbuild": "ng build --prod"
   },
   "author": "Rayhana Fazily",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
